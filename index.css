@@ -51,12 +51,10 @@ body {
 .fa-heart{
     margin-right: 15px;
     font-size: 18px;
-    color: yellow;
 }
 .fa-bookmark {
     margin-right: 20px;
     font-size: 18px;
-    color: yellow;
 }
 #main-playlist{
     border-left: 2px solid lightgrey;
@@ -66,8 +64,6 @@ body {
     background-color: white;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    /* width: 245px; */
-    /* height: 190px; */
     border: 1px solid lightgrey;
     margin-bottom: 15px;
     cursor: pointer;
