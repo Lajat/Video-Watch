@@ -109,5 +109,20 @@ xhttp3.onreadystatechange = function() {
         var data3 = JSON.parse(this.responseText);
         localStorage.setItem("videoData",JSON.stringify(data3));
     }
+        var v = data2[0].views;
+    if(v.toString().length < 7)
+    viewsInNumber.innerHTML = data2[0].views/1000 +"K" + " views";
+    if(v.toString().length >=7 && v.toString().length < 10)
+    viewsInNumber.innerHTML = (data2[0].views/1000000).toFixed(2) +"M" + " views";
+
+    if(data2[0].isLiked === true || data2[0].isLiked === "true")
+        like.style.color = "yellow";
+    else
+        like.style.color = "black";
+    
+    if(data2[0].isSaved === true || data2[0].isSaved === "true")
+        bookmark.style.color = "yellow";
+    else
+        bookmark.style.color = "black";
 }
 xhttp3.send();
