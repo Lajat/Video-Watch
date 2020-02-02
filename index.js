@@ -91,7 +91,7 @@ bookmark.onclick = function() {
 var mainPlaylist = document.getElementById('main-playlist');
 
 var xhttp = new XMLHttpRequest();
-xhttp.open('Get','http://5d76bf96515d1a0014085cf9.mockapi.io/playlist' , true);
+xhttp.open('Get','https://5d76bf96515d1a0014085cf9.mockapi.io/playlist' , true);
 xhttp.onreadystatechange = function() {
     if(this.readyState === 4) {
         var data = JSON.parse(this.responseText);
